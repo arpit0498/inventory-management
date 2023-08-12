@@ -5,6 +5,7 @@ import { Products } from "./components/Products/Products.jsx";
 import { AddProduct } from "./components/AddProduct/AddProduct.jsx";
 import { Menu } from "./components/Menu/Menu.jsx"
 import { PageWrapper } from "./Cards/PageWrapper.jsx";
+import { ProductDetails } from "./components/ProductDetails/ProductDetails.jsx";
 import "./styles.css";
 
 export default function App() {
@@ -20,6 +21,7 @@ export default function App() {
               <Route path="/department" element={<Department />} />
               <Route path="/products" element={<Products />} />
               <Route path="/add-product" element={<AddProduct />} />
+              <Route path="/products/:productId" element={<ProductDetails />} />
             </Routes>
           </PageWrapper>
         </div>

@@ -1,70 +1,35 @@
-# Getting Started with Create React App
+## App Features:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Key features of this app includes:
 
-## Available Scripts
+- Inventory Dashboard: This dashboard provides an overview of inventory levels, including the total stock count, low-stock items, and items delivered till now. These cards are not clickable, they just show the data.
 
-In the project directory, you can run:
+- Total Stock is total quantity of all the items that exist in the inventory.
+  Total Delivered is the total number of items delivered till now from the entire inventory.
+  Low stock items have a quantity less than or equal to 10.
+  Dashboard
 
-### `npm start`
+- Departments Page: In this page show different inventory departments within the business. User can view each department's inventory by clicking on the cards and navigating to that specific product lists.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+  The different departments are:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+        Kitchen
+        Clothing
+        Toys
+        Departments
 
-### `npm test`
+- Product List Page: This page displays a list of products within a chosen department. User can filter and sort products based on different attributes.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Product Listing
 
-### `npm run build`
+- Filter by department using dropdown - All departments, kitchen, clothing, toys
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Filter by low stock - Use checkbox to filter items for low stock. Low stock items have a quantity less than or equal to 10. Low Stock
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Sort by Name, Price and Stock using dropdown On selecting from the dropdown, sort the items in ascending order.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Product Management: Allows user to add new products to the inventory by clicking on the ‘New’ button on product list page. Allow to add attributes like department, product name, description, price, stock (quantity), SKU (stocking unit), supplier name, items delivered (keep 0 when adding new product) and item image url.
 
-### `npm run eject`
+Newly added item should persist in the product listing on page reload.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Detailed Product Page: Clicking on a product from the list navigates user to a detailed product page. This page provides extensive information about the selected product, including its attributes, current stock level, and supplier name, etc.
