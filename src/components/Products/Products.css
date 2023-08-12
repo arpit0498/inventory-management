@@ -1,0 +1,55 @@
+/* Styling for Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Styling for PageContainer */
+.page-container {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+/* Styling for LabelAndInputContainer */
+.label-input-container {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+/* Styling for the table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* Styling for table header */
+th {
+  background-color: #f2f2f2;
+  padding: 8px;
+  text-align: left;
+}
+
+/* Styling for table cells */
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+/* Styling for product images */
+.product-image {
+  width: 200px;
+  height: 150px;
+}
+
+/* Styling for product links */
+.product-link {
+  text-decoration: underline;
+  color: blue;
+}
+.product-link:hover {
+  text-decoration: underline;
+  color: violet;
+}
