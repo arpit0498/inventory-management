@@ -13,7 +13,10 @@ const loadData = () => {
 
 export const ProductContextProvider = ({ children }) => {
     const [products, setProducts] = React.useState(loadData);
-
+    const addProduct = (product) => {
+        setProducts(products.concat({ ...product, id: uuid() }));
+    };
+    // console.log("PRODUCTS", products);
     React.useEffect(() => {
         localStorage.setItem(KEY, JSON.stringify(products));
     }, [products]);
@@ -21,7 +24,8 @@ export const ProductContextProvider = ({ children }) => {
     return (
         <ProductContext.Provider
             value={{
-                products
+                products,
+                addProduct
             }}
         >
             {children}

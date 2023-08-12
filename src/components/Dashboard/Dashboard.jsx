@@ -21,6 +21,7 @@ export const Dashboard = () => {
     );
     return (
         <div className="small-card-container">
+
             <div className="detail-card">
                 <div className="number-card" style={{ color: "green" }}>
                     {totalStock}

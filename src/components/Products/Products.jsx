@@ -1,6 +1,9 @@
 import React from "react";
 import { ProductContext } from "../../Context/ProductContext";
 import { Link, useLocation, useNavigate } from "react-router-dom";
+
+import { Button } from "../../Cards/Button"
+
 import "./Products.css";
 
 
@@ -59,6 +62,13 @@ export const Products = () => {
                         <option value="stock">Stock</option>
                     </select>
                 </div>
+                <Button
+                    onClick={() => {
+                        navigate("/add-product");
+                    }}
+                >
+                    Add New
+                </Button>
             </div>
             <table>
                 <tbody>

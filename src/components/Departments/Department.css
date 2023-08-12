@@ -1,0 +1,13 @@
+.detail-card {
+  border: 1px solid #ccc;
+  display: flex;
+  justify-content: space-evenly;
+  cursor: pointer;
+  flex-direction: column;
+  width: 150px;
+  height: 120px;
+  margin: 20px auto;
+  background-color: #f4f4f5;
+  box-shadow: rgba(151, 155, 165, 0.6) 0px 8px 24px;
+  font-weight: 800;
+}

@@ -1,0 +1,50 @@
+/* Styling for PageContainer */
+.page-container {
+  display: flex;
+  gap: 32px;
+  flex-direction: column;
+}
+
+/* Styling for the form */
+.form {
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+}
+
+/* Styling for label and input container */
+.label-input-container {
+  display: flex;
+  gap: 4px;
+  flex-direction: column;
+}
+
+/* Styling for select element */
+.select {
+  height: 30px;
+  padding: 0 8px;
+  width: 400px;
+}
+
+/* Styling for input element */
+.input {
+  height: 30px;
+  padding: 0 8px;
+  width: 400px;
+}
+
+/* Styling for textarea element */
+.textarea {
+  padding: 8px;
+  width: 400px;
+}
+
+/* Styling for required text */
+.required-text {
+  color: red;
+}
+
+/* Styling for submit button */
+.submit-button {
+  width: fit-content;
+}
