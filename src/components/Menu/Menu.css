@@ -1,0 +1,12 @@
+nav {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+nav .link {
+  text-decoration: none;
+  color: white;
+  background:black;
+  padding: 1rem;
+}
